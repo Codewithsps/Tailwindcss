@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>Tailwindcss - CSS</title>
+</head>
+<body class="bg-slate-950">
+<nav class=" bg-slate-950 flex justify-between items-center w-[92%]  mx-auto">
+    <div>
+        <img class="w-16 cursor-pointer mr-5" src="img/github.jfif" alt="...">
+    </div>
+    <div
+        class="nav-links duration-500 md:static absolute bg-slate-950 text-white md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+            <li>
+                <a class="hover:text-gray-500" href="#">Home</a>
+            </li>
+           
+            <li>
+                <a class="hover:text-gray-500" href="#">About</a>
+            </li>
+            <li>
+                <a class="hover:text-gray-500" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="flex items-center gap-6">
+        <button class="bg-slate-800 text-white px-5 py-2 rounded-full hover:bg-slate-600">Sign in</button>
+        <ion-icon onclick="onToggleMenu(this)"  name="menu" class="text-3xl cursor-pointer md:hidden text-white"></ion-icon>
+    </div>
+</nav>
+<header class="w-full h-auto">
+    <img class="w-full hidden md:block" src="./img/home.jpg" alt="error"  srcset="">
+    <img class="w-full md:hidden" src="./img/mobile.png" alt="" srcset="">
+</header>
+<!-- our students section -->
+<div class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10">
+    <div class="w-full h-auto flex flex-wrap flex-col items-center">
+        <p class="text-indigo-800 font-bold text-2xl md:text-4xl text-center"> Lorem ipsum dolor sit amet consectetur .</p>
+        <div class="w-40 h-1 border-b-4 border-yellow-500 mt-2 rounded-2xl md:mt-4 mb-12"></div>
+    </div>
+    <div class="w-full flex flex-wrap justify-evenly">
+<div class="w-45 flex flex-col items-center mb-12">
+    <img class="w-20 h-20 " src="./img/github.jfif" alt="" srcset="">
+    <p class="text-3xl font-bold text-white">100</p>
+    <p class="text-3xl font-bold text-gray-500">Lorem ipsum dolor sit.
+    </p>
+</div>
+
+<div class="w-45 flex flex-col items-center mb-12">
+    <img class="w-20 h-20 " src="./img/github.jfif" alt="" srcset="">
+    <p class="text-3xl font-bold text-white">200</p>
+    <p class="text-3xl font-bold text-gray-500">Lorem ipsum dolor sit.
+    </p>
+</div>
+
+<div class="w-45 flex flex-col items-center mb-12">
+    <img class="w-20 h-20 " src="./img/github.jfif" alt="" srcset="">
+    <p class="text-3xl font-bold text-white">300</p>
+    <p class="text-3xl font-bold text-gray-500">Lorem ipsum dolor sit.
+    </p>
+</div>
+
+    </div>
+    <!-- our students section ends -->
+    <!-- our ptoduct section -->
+    <div class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10">
+        <div class="w-full h-auto flex flex-wrap flex-col items-center">
+            <p class="text-indigo-800 font-bold text-2xl md:text-4xl text-center"> Lorem ipsum dolor sit amet consectetur .</p>
+            <div class="w-40 h-1 border-b-4 border-yellow-500 mt-2 rounded-2xl md:mt-4 mb-12"></div>
+    </div>
+    <div class="w-[100%] h-auto flex flex-wrap justify-around ">
+<div class="w-64 md:w-[20%] flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+    <img src="./img/github.jfif" alt="" srcset="">
+    <p class="text-3xl font-bold text-white">Codewithsps</p>
+    <p class="text-xl font-bold text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, accusamus?</p>
+</div>
+<div class="w-64 flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+    <img src="./img/github.jfif" alt="" srcset="">
+    <p class="text-3xl font-bold text-white">Codewithsps</p>
+    <p class="text-xl font-bold text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, accusamus?</p>
+</div>
+<div class="w-64 flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+    <img src="./img/github.jfif" alt="" srcset="">
+    <p class="text-3xl font-bold text-white">Codewithsps</p>
+    <p class="text-xl font-bold text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, accusamus?</p>
+</div>
+<div class="w-64 flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+    <img src="./img/github.jfif" alt="" srcset="">
+    <p class="text-3xl font-bold text-white">Codewithsps</p>
+    <p class="text-xl font-bold text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, accusamus?</p>
+</div>
+    </div>
+</div>
+
+ <!-- our ptoduct section ends -->
+ <footer class="text-white text-center " >
+    <div>
+        <p>Copyright 2023 @Codewithsps</p>
+    </div>
+ </footer>
+ <script>
+    const navLinks = document.querySelector('.nav-links')
+    function onToggleMenu(e){
+        e.name = e.name === 'menu' ? 'close' : 'menu'
+        navLinks.classList.toggle('top-[9%]')
+    }
+</script>
+</body>
+</html>
